@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  --bg-Color-Yellow: hsl(47, 88%, 63%);
+  --White: hsl(0, 0%, 100%);
+  --Gray-500: hsl(0, 0%, 42%);
+  --Gray-950: hsl(0, 0%, 7%);
+
+  --fs-body: 1rem;
+  --fs-heading: 1.75rem;
+  --font-family: "Figtree", sans-serif;
+
+  --fw-500: 500;
+  --fw-800: 800;
+}
+
+h1 {
+  line-height: 1.5;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-500);
+  background-color: var(--bg-Color-Yellow);
+}
+.flex {
+  display: flex;
+
+  align-items: center;
+}
+.wrapper {
+  min-height: 70vh;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 25rem;
+  border: 2px solid black;
+  margin: 0 auto;
+  background-color: var(--White);
+  flex-direction: column;
+  border-radius: 1.2rem;
+  box-shadow: 5px 8px 2px 0px hsl(0, 0%, 7%);
+}
+
+.img-container {
+  max-width: 25rem;
+  padding: 1rem;
+}
+.img-container img {
+  width: 100%;
+  object-fit: cover;
+  margin-block: 1rem;
+  border-radius: 0.7rem;
+}
+.content-info {
+  margin-inline: 2rem;
+}
+.course-learn {
+  background-color: var(--bg-Color-Yellow);
+  padding: 0.6rem;
+  display: inline-block;
+  border-radius: 0.4rem;
+  font-weight: var(--fw-800);
+  margin-bottom: 0.6rem;
+}
+
+.title {
+  font-size: var(--fs-heading);
+  margin-block: 1rem;
+}
+
+.desc {
+  color: var(--Gray-500);
+  font-weight: var(--fw-500);
+  margin-bottom: 1rem;
+}
+.avtar-info {
+  align-content: flex-start;
+  gap: 1rem;
+  margin: 0.6rem;
+}
+.avatar-img {
+  width: 50px;
+  height: 50px;
+}
+.name {
+  font-weight: var(--fw-800);
+}
+
+@media (min-width: 320px) and (max-width: 375px) {
+  .wrapper {
+    max-height: 100dvh;
+  }
+  body {
+    font-size: 0.8rem;
+  }
+  .title {
+    font-size: 1rem;
+  }
+}
